@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "spec-version": "1.0"
+  },
+  "configuration-groups": [
+    {
+      "label": "API Batch Source",
+      "properties": [
+        {
+          "name": "apiTemplate",
+          "widget-type": "textbox",
+          "label": "API URL Template",
+          "placeholder": "https://api.com/data?id=${param}",
+          "required": true
+        },
+        {
+          "name": "paramsFilePath",
+          "widget-type": "textbox",
+          "label": "Parameter File (GCS Path)",
+          "required": true
+        },
+        {
+          "name": "paginationParam",
+          "widget-type": "textbox",
+          "label": "Pagination Parameter (optional)"
+        },
+        {
+          "name": "maxPages",
+          "widget-type": "number",
+          "label": "Max Pages (if pagination used)"
+        }
+      ]
+    }
+  ]
+}
